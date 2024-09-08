@@ -1,0 +1,18 @@
+<% layout("layouts/boilerplate") -%>
+  <div class="row col-4 offset-3 mt-3">
+    <h3>Login to Figma</h3>
+    
+    <form action="/login" method="POST">
+        <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label">Email address</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Username" name="username">
+          </div>
+          <div class="mb-3">
+            <label for="exampleFormControlInput1" class="form-label" >Username</label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Passwors" name="password">
+          </div>
+          <button class="btn btn-primary">Login</button>
+    </form>
+      <p>No account ? <a href="/signup">Create One</a></p>
+      <p>Forgot password ? <a href="#">Verfiy through email</a></p>
+  </div>
